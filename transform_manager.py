@@ -1,6 +1,7 @@
 from PySide6 import QtCore
 from PySide6 import QtWidgets
 from PySide6 import QtGui
+import maya.cmds as cmds
 import maya.OpenMayaUI as omui
 from shiboken6 import wrapInstance
 
@@ -14,7 +15,7 @@ def get_window():
 class MyWindow(QtWidgets.QDialog):
     def __init__(self, parent=get_window()):
         super().__init__(parent)
-        self.setWindowTitle("Toggle Lock Tool")
+        self.setWindowTitle("Transform & Visibility Manager")
         self.setWindowFlag(QtCore.Qt.Tool, True)
         self.setMinimumSize(400, 300)
         
@@ -44,7 +45,6 @@ class MyWindow(QtWidgets.QDialog):
         #action buttons
         self.refresh_btn = QtWidgets.QPushButton("Refresh")
         self.close_btn = QtWidgets.QPushButton("Close")
-        pass
         
         
         
@@ -67,7 +67,6 @@ class MyWindow(QtWidgets.QDialog):
         #attaching to main layout
         main_layout.addWidget(self.mesh_table)
         main_layout.addLayout(btn_layout)
-        pass
         
         
         
@@ -83,12 +82,9 @@ class MyWindow(QtWidgets.QDialog):
         #method for table checkes
         self.mesh_table.itemChanged.connect(self.on_table_item_changed)
     
-    
-    def close_clicked(self):
-        self.close()
+
         
     def refresh_table(self):
-        print("TODO: Get all meshes in scene")
         #reset table
         self.mesh_table.setRowCount(0)
         #get all messes in scene
@@ -139,7 +135,6 @@ class MyWindow(QtWidgets.QDialog):
             item.setCheckState(QtCore.Qt.Checked)
         else:
             item.setCheckState(QtCore.Qt.Unchecked)
-        pass
 
 
   #function for checkboxes on table
