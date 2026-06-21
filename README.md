@@ -6,15 +6,12 @@ An artist-facing production utility for Autodesk Maya that provides a centralize
 * **Live Scene Scanning:** Instantly enumerates all mesh nodes in the active Maya scene.
 * **Batch Visibility Control:** Quick checkbox toggles to hide/show scene geometry.
 * **Unified Channel Locking:** One-click toggling to instantly lock or unlock Translate, Rotate, and Scale attributes simultaneously.
-* **Clean & Modern UI:** Built natively with PySide6 to dock smoothly within the Maya ecosystem.
-
-## 📸 Interface Preview
-*Coming Soon: Add a GIF or Screenshot of your UI here!*
+* [coming soon: **Clean & Modern UI:** Built natively with PySide6 to dock smoothly within the Maya ecosystem.]
 
 ## 🛠️ Technical Details
 * **Language:** Python 3
 * **Libraries:** PySide6, Maya `cmds`, `shiboken6`, `OpenMayaUI`
-* **Pattern:** Event-driven UI with signal blocking (`blockSignals`) to handle seamless data synchronization between Maya attributes and Qt components.
+* **Pattern:** Event-driven UI  [coming soon: signal blocking (`blockSignals`) to handle seamless data synchronization between Maya attributes and Qt components.]
 
 ## 📦 Installation & Usage
 1. Download or copy the code from `transform_manager.py`.
