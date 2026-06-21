@@ -1,4 +1,4 @@
-markdown# Maya Transform & Visibility Manager
+Maya Transform & Visibility Manager
 
 An artist-facing production utility for Autodesk Maya that provides a centralized interface to manage scene meshes. This tool optimizes layout workflows by replacing repetitive Channel Box operations with unified visibility toggles and channel locking controls.
 
